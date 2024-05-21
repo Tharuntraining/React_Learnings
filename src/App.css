@@ -1,38 +1,64 @@
-.App {
+.header {
+  height: 200px;
+  width: 100%;
+  background-color: beige;
+  padding-top: 50px;
+}
+
+.task-card {
+  width: 20%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 5px rgba(1, 1, 1, 0.2);
+  margin: 20px 20px;
+}
+
+.card-header {
+  /* background-color: #2acee4 !important; */
+  padding: 10px !important;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 1, 1.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-body {
+  /* background-color: aliceblue; */
+  border-top: '1px solid black';
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-text {
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-container {
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 10px 10px !important;
+  /* margin: 20px; */
+  flex-direction: row;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.MuiBox-root {
+  float: right;
+  background-color: #f1f1f1;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiCardActions-root {
+  float: right;
+
+}
+
+button {
+  margin: 20px;
+}
+
+.MuiLinearProgress-root,
+.task-status {
+  margin: 10px
 }
